@@ -1,0 +1,120 @@
+    
+    .grid{
+        display:grid;
+        grid-template-rows: 0 100vh 70px auto 70px auto 70px auto 70px auto;
+        grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr;
+        grid-template-areas: 
+            "header  header header header"
+            "main    main main main"
+            "...     ... ... ..."
+            "work  work work work"
+            "...     ... ... ..."
+            "skills skills skills skills"
+            "...     ... ... ..."
+            "about about about about"
+            "...     ... ... ..."
+            "footer footer footer footer";
+          }
+    /* ヘッダー */
+    header{
+        grid-area:header;
+        position: fixed;
+        width: 100%;
+    }
+    
+    
+    
+    
+    
+    /* メインエリア */
+
+    .main{
+    width: 100%;
+    grid-area:main;
+    padding: 180px 0 100px 0;;
+    background-image: url(../img/asabin.jpg);
+    background-size: cover;
+    color:rgb(132, 170, 241);
+    text-align: center;
+    }
+    .main h1 {
+    opacity:0.7;
+    font-size: 45px;
+    letter-spacing: 4px;
+    }
+    
+    .main p {
+    opacity: 0.7;
+    }
+
+    .container {
+        max-width: 1170px;
+        width: 100%;
+        padding: 0 15px;
+        margin: 0 auto;
+        }
+
+    .btn {
+    padding: 8px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    }
+    .btn:hover{
+    opacity:1;
+    }
+    .email {
+    background-color: #65dfbb;
+    }
+    
+    .instagram {
+    background-color: #e350be;
+    margin-right: 10px;
+    }
+    .twitter {
+    background-color: #3890cb;
+    margin-right: 10px;
+    }
+    .blog {
+    background-color: #b6c7c2;
+    margin-right: 10px;
+    }
+    .youtube {
+    background-color: #db1010;
+    }
+    .btn-wrapper {
+    margin: 20px 0;
+    }
+    .btn-wrapper p {
+    margin: 10px 0;
+    }
+    .fa{
+    margin-right: 5px;
+    }
+
+/* ワーク */
+.work{
+grid-area:work;
+width: 100%;
+}
+    
+/* スキル */
+.skills{
+grid-area:skills;
+width: 100%;
+}
+    
+
+/* アバウト */
+.about{
+grid-area:about;
+width: 100%;
+}
+    
+/* フッター */
+.footer{
+grid-area:footer;
+width: 100%;
+}
+    
