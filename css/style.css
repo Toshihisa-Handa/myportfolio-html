@@ -1,7 +1,17 @@
-    
+/* 共通 */
+ul{
+   list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color:inherit
+}
+
+
     .grid{
         display:grid;
-        grid-template-rows: 0 100vh 70px auto 70px auto 70px auto 70px auto;
+        grid-template-rows: 0 50vh 70px auto 70px auto 70px auto 70px auto;
         grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr;
         grid-template-areas: 
             "header  header header header"
@@ -17,13 +27,23 @@
           }
     /* ヘッダー */
     header{
+        z-index: 9999;
         grid-area:header;
         position: fixed;
         width: 100%;
+        border: 1px solid rgb(190, 194, 204);
+        box-shadow: 1px 1px 2px 1px rgb(182, 191, 194);
     }
-    
-    
-    
+
+    .header-navs{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        align-items: center;
+    }
+
     
     
     /* メインエリア */
@@ -37,18 +57,39 @@
     color:rgb(132, 170, 241);
     text-align: center;
     }
-    .main h1 {
-    opacity:0.7;
-    font-size: 45px;
-    letter-spacing: 4px;
+
+    .top-h1{
+    color:rgb(241, 242, 232);
+    font-weight: 700;
+    letter-spacing: 10px;
+    padding: 0 0 0 3px;
+    font-size: 36px;
+    font-family: Lato,sans-serif;
+    }
+
+    .mainTitle1{
+        padding:10px;
+        background-color: rgba(37, 39, 43, 0.664);
+    }
+
+    .top-h1-2{
+        margin-top:25px;
+        color:rgb(241, 242, 232);
+        font-weight: 300;
+        font-size: 30px;
+        font-family: Lato,sans-serif;
     }
     
+    .mainTitle2{
+        padding:7px;
+        background-color: rgba(37, 39, 43, 0.664);
+    }
+
     .main p {
     opacity: 0.7;
     }
 
     .container {
-        max-width: 1170px;
         width: 100%;
         padding: 0 15px;
         margin: 0 auto;
@@ -58,18 +99,19 @@
     padding: 8px 24px;
     color: white;
     display: inline-block;
-    opacity: 0.8;
+    opacity: 1;
     border-radius: 4px;
     }
     .btn:hover{
-    opacity:1;
+    opacity:0.8;
     }
-    .email {
+    /* .email {
     background-color: #65dfbb;
-    }
+    } */
     
-    .instagram {
-    background-color: #e350be;
+    .github {
+    margin-top:50px;
+    background-color: #454750;
     margin-right: 10px;
     }
     .twitter {
@@ -80,8 +122,8 @@
     background-color: #b6c7c2;
     margin-right: 10px;
     }
-    .youtube {
-    background-color: #db1010;
+    .qiita {
+    background-color: #46cc5a;
     }
     .btn-wrapper {
     margin: 20px 0;
@@ -93,12 +135,134 @@
     margin-right: 5px;
     }
 
+/* 共通タイトル */
+.title{
+    text-align: center;
+    font-size: 22px;
+    letter-spacing: 3px;
+}
+
 /* ワーク */
 .work{
 grid-area:work;
 width: 100%;
 }
-    
+
+.workCards{
+    width: 90%;
+    margin:20px auto;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.workCard{
+    margin-top:50px;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,.2);
+    width: 300px;
+    height: 420px;
+}
+
+.cardTop{
+    width: 100%;
+    height: 40%;
+    background-image: url(../img/lifeflower.png);
+    background-size: cover;
+
+}
+
+.cardTop2{
+    width: 100%;
+    height: 40%;
+    background-image: url(../img/thy.png);
+    background-size: cover;
+
+}
+.cardTop3{
+    width: 100%;
+    height: 40%;
+    background-image: url(../img/manul.png);
+    background-size: cover;
+
+}
+.cardTop4{
+    width: 100%;
+    height: 40%;
+    background-image: url(../img/jan.png);
+    background-size: cover;
+
+}
+
+.cardBottom{
+    height: 60%;
+    padding:7px 10px 7px 10px;
+}
+.workImg{
+width: 100%;
+object-fit: cover;
+}
+
+.cardTitle{
+    padding: 44% 0 0 5px;
+    color:white;
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: .0125em;
+    line-height: 2rem;
+}
+
+.cardspan{
+    background-color: rgba(81, 82, 85, 0.808);
+    padding:7px
+}
+
+.cardTag{
+    color: rgba(0,0,0,.6);
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    letter-spacing: .0071428571em;
+    border-bottom: 1px solid gray;
+    padding: 7px 0 10px 0;
+
+
+}
+
+.cardText{
+    margin-top:7px;
+    padding-right: 25px;
+    color: rgba(0,0,0,.87);
+    font-size: .875rem;
+    font-weight: 400;
+    line-height: 1.375rem;
+    letter-spacing: .0071428571em;
+
+}
+
+.url{
+    margin-top:20px;
+    color: rgba(0,0,0,.87);
+    font-size: .875rem;
+}
+.url a{
+    color: #0277bd!important;
+    caret-color: #0277bd!important;
+    text-decoration: underline;
+}
+
+.git{
+    margin-top:10px;
+    color: rgba(0,0,0,.87);
+    font-size: .875rem;
+}
+
+.git a{
+    color: #0277bd!important;
+    caret-color: #0277bd!important;
+    text-decoration: underline;
+}
 /* スキル */
 .skills{
 grid-area:skills;
