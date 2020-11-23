@@ -260,7 +260,7 @@ header {
 }
 
 .skillCards {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 20px auto;
   display: flex;
   justify-content: space-between;
@@ -414,7 +414,7 @@ footer {
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
   .grid {
     display: grid;
     grid-template-rows: 0 100vh 70px auto 70px auto 70px auto 70px 60px;
