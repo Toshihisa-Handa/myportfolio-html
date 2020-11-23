@@ -291,6 +291,10 @@ header {
   line-height: 1.5;
 }
 
+.iconImg {
+  width: 80px;
+}
+
 .skillTitle {
   text-align: center !important;
   font-family: Lato, sans-serif;
@@ -336,8 +340,8 @@ header {
   height: 100%;
   object-fit: cover;
 }
-.aboutCenter{
-    width: 3%;
+.aboutCenter {
+  width: 3%;
 }
 
 .aboutRight {
@@ -384,10 +388,9 @@ footer {
 
 @media (max-width: 1000px) {
   /* アバウト */
-.aboutTitle{
+  .aboutTitle {
     margin-bottom: 70px;
-
-}
+  }
   .about-area {
     width: 100%;
     margin: 70px auto;
@@ -397,86 +400,77 @@ footer {
   .aboutLeft {
     width: 80%;
     max-height: 300px;
-    margin:0 auto;
+    margin: 0 auto;
   }
-  
+
   .aboutImg {
     max-height: 250px;
   }
-  
+
   .aboutRight {
     width: 80%;
     padding: 10px;
-    margin:0 auto;
+    margin: 0 auto;
   }
-  
 }
 
 @media (max-width: 550px) {
-    .grid {
-        display: grid;
-        grid-template-rows: 0 100vh 70px auto 70px auto 70px auto 70px 60px;
-        grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr;
-        grid-template-areas:
-          "header  header header header"
-          "main    main main main"
-          "...     ... ... ..."
-          "work  work work work"
-          "...     ... ... ..."
-          "skills skills skills skills"
-          "...     ... ... ..."
-          "about about about about"
-          "...     ... ... ..."
-          "footer footer footer footer";
-      }
-      
+  .grid {
+    display: grid;
+    grid-template-rows: 0 100vh 70px auto 70px auto 70px auto 70px 60px;
+    grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr;
+    grid-template-areas:
+      "header  header header header"
+      "main    main main main"
+      "...     ... ... ..."
+      "work  work work work"
+      "...     ... ... ..."
+      "skills skills skills skills"
+      "...     ... ... ..."
+      "about about about about"
+      "...     ... ... ..."
+      "footer footer footer footer";
+  }
 
-      /* メインエリア */
-      .container {
-        padding: 0;
-      }
-      .main {
-        background-image: url(../img/asabin.jpg);
-      }
-.top-h1-2{
+  /* メインエリア */
+  .container {
+    padding: 0;
+  }
+  .main {
+    background-image: url(../img/asabin.jpg);
+  }
+  .top-h1-2 {
     margin-bottom: 40px;
+  }
 
-}
+  .btn {
+    margin-top: 15px;
+  }
 
-      .btn{
-        margin-top: 15px;
-
-      }
-
-
-/* ワーク */
-.workTitle{
+  /* ワーク */
+  .workTitle {
     margin-bottom: 55px;
-}
+  }
 
-.workCard{
+  .workCard {
     margin: 15px auto;
+  }
 
-}
-
-
-    /* スキル */
-    .skillsTitle{
+  /* スキル */
+  .skillsTitle {
     margin-bottom: 70px;
-    }
-    .skillCard{
-        margin: 0 auto;
+  }
+  .skillCard {
+    margin: 0 auto;
+  }
 
-    }
-
-/* アバウト */
-.aboutCenter{
+  /* アバウト */
+  .aboutCenter {
     display: none;
-}
-    /* フッター */
+  }
+  /* フッター */
 
-    .copyright {
-        padding-top: 5%;
-      }
-
+  .copyright {
+    padding-top: 5%;
+  }
 }
