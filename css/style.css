@@ -344,17 +344,17 @@ header {
 }
 
 .aboutLeft {
-  width: 47%;
+  width: 42%;
   height: 300px;
 }
 
 .aboutImg {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .aboutCenter {
-  width: 3%;
+  width: 8%;
 }
 
 .aboutRight {
@@ -400,6 +400,23 @@ footer {
 }
 
 @media (max-width: 1000px) {
+  .grid {
+    display: grid;
+    grid-template-rows: 0 50vh 70px auto 70px auto 0 auto 70px 100px;
+    grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr;
+    grid-template-areas:
+      "header  header header header"
+      "main    main main main"
+      "...     ... ... ..."
+      "work  work work work"
+      "...     ... ... ..."
+      "skills skills skills skills"
+      "...     ... ... ..."
+      "about about about about"
+      "...     ... ... ..."
+      "footer footer footer footer";
+  }
+
   /* アバウト */
   .aboutTitle {
     margin-bottom: 70px;
@@ -411,7 +428,7 @@ footer {
   }
 
   .aboutLeft {
-    width: 80%;
+    width: 30%;
     max-height: 300px;
     margin: 0 auto;
   }
@@ -478,6 +495,12 @@ footer {
   }
 
   /* アバウト */
+  .aboutLeft {
+    width: 80%;
+    max-height: 300px;
+    margin: 0 auto;
+  }
+
   .aboutCenter {
     display: none;
   }
