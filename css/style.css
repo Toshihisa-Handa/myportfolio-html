@@ -10,11 +10,13 @@ a {
 
 .grid {
   display: grid;
-  grid-template-rows: 0 50vh 70px auto 70px auto 70px auto 70px 100px;
+  grid-template-rows: 0 50vh 70px auto 70px auto 70px auto 70px auto 70px 100px;
   grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr;
   grid-template-areas:
     "header  header header header"
     "main    main main main"
+    "...     ... ... ..."
+    "pick  pick pick pick"
     "...     ... ... ..."
     "work  work work work"
     "...     ... ... ..."
@@ -142,6 +144,101 @@ header {
   letter-spacing: 3px;
 }
 
+/* ピックアップ */
+.pick {
+  grid-area: pick;
+  width: 100%;
+}
+
+.pick-area {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.pickCard {
+  margin:50px auto;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 600px;
+  height: 500px;
+}
+
+.pcardTop {
+  width: 100%;
+  height: 40%;
+  background-image: url(../img/lifeflower.png);
+  background-size: cover;
+}
+
+
+.pcardBottom {
+  height: 60%;
+  padding: 7px 10px 7px 10px;
+}
+.workImg {
+  width: 100%;
+  object-fit: cover;
+}
+
+.pcardTitle {
+  padding: 27% 0 0 5px;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 500;
+  letter-spacing: 0.0125em;
+  line-height: 2rem;
+}
+
+.pcardspan {
+  background-color: rgba(81, 82, 85, 0.808);
+  padding: 7px;
+}
+
+.pcardTag {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: 0.0071428571em;
+  border-bottom: 1px solid gray;
+  padding: 7px 0 10px 0;
+}
+
+.pcardText {
+  margin-top: 7px;
+  padding-right: 25px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.375rem;
+  letter-spacing: 0.0071428571em;
+}
+
+.purl {
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+}
+.purl a {
+  color: #0277bd !important;
+  caret-color: #0277bd !important;
+  text-decoration: underline;
+}
+
+.pgit {
+  margin-top: 10px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 0.875rem;
+}
+
+.pgit a {
+  color: #0277bd !important;
+  caret-color: #0277bd !important;
+  text-decoration: underline;
+}
+
+
 /* ワーク */
 .work {
   grid-area: work;
@@ -162,7 +259,7 @@ header {
   border-radius: 8px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
   width: 300px;
-  height: 420px;
+  height: 460px;
 }
 
 .cardTop {
@@ -405,11 +502,13 @@ footer {
 @media (max-width: 1000px) {
   .grid {
     display: grid;
-    grid-template-rows: 0 50vh 70px auto 70px auto 0 auto 70px 100px;
+    grid-template-rows: 0 50vh 70px auto 70px auto 70px auto 0 auto 70px 100px;
     grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr;
     grid-template-areas:
       "header  header header header"
       "main    main main main"
+      "...     ... ... ..."
+      "pick  pick pick pick"
       "...     ... ... ..."
       "work  work work work"
       "...     ... ... ..."
@@ -450,11 +549,13 @@ footer {
 @media (max-width: 600px) {
   .grid {
     display: grid;
-    grid-template-rows: 0 100vh 70px auto 70px auto 70px auto 70px 60px;
+    grid-template-rows: 0 100vh 70px auto 70px auto 70px auto 70px auto 70px 60px;
     grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr;
     grid-template-areas:
       "header  header header header"
       "main    main main main"
+      "...     ... ... ..."
+      "pick  pick pick pick"
       "...     ... ... ..."
       "work  work work work"
       "...     ... ... ..."
@@ -480,6 +581,24 @@ footer {
     margin-top: 15px;
   }
 
+/* ピックアップ   */
+.pickTitle{
+  margin-bottom: 55px;
+
+}
+
+.pickCard {
+  margin:15px auto;
+  width: 300px;
+  height: 460px;
+}
+
+.pcardTitle {
+  padding: 44% 0 0 5px;
+  color: white;
+  font-size: 1rem;
+
+}
   /* ワーク */
   .workTitle {
     margin-bottom: 55px;
