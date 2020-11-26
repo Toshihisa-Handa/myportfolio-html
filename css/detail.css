@@ -41,10 +41,17 @@ header{
 
 .headerNav{
     letter-spacing: 3px;
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 400;
+    padding:12px
     /* padding-bottom: 5px;
     border-bottom: black 1px solid; */
+}
+
+.headerNav:hover{
+    background-color: rgb(119, 123, 129);
+    color:white;
+    border-radius: 5%;
 }
 
 
@@ -83,6 +90,14 @@ header{
     background-image: url(../img/lifeflower.png);
     background-size: cover;
 }
+
+.workTop2{
+    width: 100%;
+    height: 600px;
+    background-image: url(../img/thy.png);
+    background-size: cover;
+}
+
 .workBottom{
     width: 100%;
     padding-bottom: 5%;
@@ -156,7 +171,7 @@ footer {
         max-width: 1400px; 
         margin:0 auto;
         display: grid;
-        grid-template-rows: 50px 10px 30px auto 70px 60px ;
+        grid-template-rows: 50px 10px 50px auto 70px 60px ;
         grid-template-columns: 2.5fr 2.5fr 2.5fr 2.5fr;
         grid-template-areas:
           "header  header header header"
@@ -166,6 +181,14 @@ footer {
           "...     ... ... ..."
           "footer footer footer footer";
       }
+
+    .headerNav{
+    letter-spacing: 3px;
+    font-size: 11px;
+    font-weight: 400;
+    /* padding-bottom: 5px;
+    border-bottom: black 1px solid; */
+}
     
     /* タイトル */
     .title{
@@ -188,6 +211,9 @@ footer {
     /* ワーク */
     .workTop{
         height: 175px;
+    }
+    .workTop2{
+        height: 200px;
     }
 
     .workBottom{
